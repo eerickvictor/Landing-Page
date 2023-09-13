@@ -113,3 +113,7 @@ body{
     display: block;
     margin: 0 auto;
 }
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
