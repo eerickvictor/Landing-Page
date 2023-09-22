@@ -51,7 +51,7 @@ body{
     flex-direction: column;
     gap: 32px;
 }
-.conteudo-principal-escrito-titulo {
+.conteudo-principal-escrito-titulo, .texto-principal{
     font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 64px;
@@ -192,4 +192,22 @@ box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     margin-top: 30px;
     text-align: center;
     width: 190px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opção-escola, .opção-professor{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+.nome-imagem{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #FFF2EF;
 }

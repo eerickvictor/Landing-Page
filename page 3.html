@@ -3,9 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logado com Sucesso!</title>
+    <title>Cadastro </title>
+    <style>
+        * {
+                
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-size: 100%;
+            background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+            color: #FFF2E7;
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecalho{
+            border-bottom: 0.4px solid #FFF2E7;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .cabecalho-items-esquerda,.cabecalho-items-direita,.footer-items{
+            display: flex;
+            gap: 24px;
+            padding: 12px;
+            margin: 0;
+            color: lightgrey;
+
+        }
+
+        .conteudo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .conteudo-titulo,.conteudo-subtitulo{
+            text-align: center;
+        }
+        .conteudo-subtitulo{
+            margin-bottom: 6px;
+        }
+        .conteudo-titulo-field{
+            margin-bottom: 30px;
+        }
+
+        .formulario-de-cadastro{
+            background: #a47d74;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            padding: 20px;
+            align-items: start;
+            gap: 8px;
+        }
+        .imagem-de-perfil{
+            width: 26px;
+            border-radius: 18px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        }
+        .imagem-anexar-curriculo{
+            width: 26px;
+            border-radius: 18px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .anexar-curriculo-e-botao-field{
+            margin-top: 4px;
+            margin-bottom: 4px;
+            gap: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+        .imagem-de-perfil-field{
+            margin-top: 4px;
+            margin-bottom: 4px;
+            gap: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao-imagem-de-profile{
+            height: 18px;
+        }
+        .submit-button{
+            margin-top: 4px;
+            width: 220px;
+            margin-bottom: 200px;
+            border-radius: 18px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        }
+        button{
+            border-radius: 18px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .footer {
+            border-top: 0.4px solid #FFF2E7;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-items{
+            justify-content: center;
+            font-size: 14px;
+            padding: 6px;
+        }
+        .footer-texto{
+            padding-top: 8px;
+            text-align: center;
+            margin: 0px;
+        }
+        .footer-texto p{
+            margin: 0;
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1> <strong>Logado com Sucesso!</strong></h1>
+
+
+    <header class="cabecalho">
+        <ul class="cabecalho-items-esquerda">
+            <li>Home</li>
+            <li>Escolas</li>
+            <li>Professores</li>
+        </ul>
+        <ul class="cabecalho-items-direita">
+            <li>Parceiros</li>
+            <li>Sobre</li>
+            <li>Sugestoes</li>
+        </ul>
+   </header> 
+
+
+   <main class="conteudo">
+
+        <div class="conteudo-titulo-field">
+          <h1 class="conteudo-titulo">Seja bem vindo!</h1>
+         <p class="conteudo-subtitulo"><i>Conte-nos um pouco sobre você</i></p>
+        </div>
+    
+        <fieldset class="formulario-de-cadastro">
+
+            <div class="nome-field">
+                <label for="nome"><strong>Nome:</strong></label><br>
+                <input type="text" name = "nome" id="nome" required>
+            </div>
+
+            <div class="sobrenome-field">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
+                <input type="text" name = "sobrenome" id="sobrenome" required>
+            </div>
+
+
+            <div class="cpf-field">
+                <div class="cpf-field">
+                    <label for="cpf"><strong>Numero de Cpf:</strong></label><br>
+                    <input type="number" placeholder="000.000.000-00" name = "cpf" id="cpf" required>
+                </div>
+            </div>
+            
+
+
+
+            <div class="data-de-nascimento-field">
+                <label for="data-de-nascimento"><strong>Data de nascimento:</strong></label><br>
+                <input type="date" name = "data-de-nascimento" id="data-de-nascimento" required>
+            </div>
+
+            <div class="disponibilidade-field">
+                <label for="disponibilidade"><strong>Disponibilidade:</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-manha" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Manhã</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-tade" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Tarde</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-noite" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Noite</strong></label><br>
+            </div>
+
+
+            <div class="area-de-ensino-e-botao-field">
+                <label for="area-de-ensino"><strong>Areas de ensino:</strong></label><br>
+                <select name="area-de-ensino" id="area-de-ensino">
+                    <option value="portugues">Língua Portuguesa</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="fisica">Fisica</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="quimica">Química</option>
+                    <option value="artes">Artes</option>
+                    <option value="educacao-fisica">Educação Física</option>
+                    <option value="ingles">Lingua Inglesa</option>
+                    <option value="filosofia">Filosofia</option>
+                    <option value="historia">Hístoria</option>
+                    <option value="sociologia">Sociologia</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+            <button class="botao-area-de-ensino">Adcionar</button>    
+            </div>
+
+            <div class="telefone-field">
+                <label for="telefone"><strong>Telefone / Celular:</strong></label><br>
+                <input type="tel" placeholder="(XX)XXXX-XXXX" name="telefone" id="telefone" required><br>
+                <button class="botao-telefone">Adcionar</button> 
+            </div>
+
+            <div class="endereco-e-botao-field">
+                <label for="endereco-estado"><strong>Estado onde reside:</strong></label> <br>
+                <select name="endereco-estado" id="endereco-estado">
+                    <option value="pernambuco">Pernambuco (PE)</option>
+                    <option value="acre">Acre (AC)</option>
+                    <option value="alagoas">Alagoas (AL) </option>
+                    <option value="amapa">Amapá (AP)</option>
+                    <option value="amazonas">Amazonas (AM)</option>
+                    <option value="bahia">Bahia (BA)</option>
+                    <option value="ceara">Ceará (CE)</option>
+                    <option value="distrito-federal">Distrito Federal (DF)</option>
+                    <option value="espirito-santo">Espírito Santo (ES)</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão (MA)</option>
+                    <option value="mato-grosso">Mato Grosso (MT)</option>
+                    <option value="mato-grosso-do-sul">Mato Grosso do Sul (MS)</option>
+                    <option value="minas-gerais">Minas Gerais (MG)</option>
+                    <option value="para">Pará (PA)</option>
+                    <option value="paraiba">Paraíba (PB)</option>
+                    <option value="parana">Paraná (PR)</option>
+                    <option value="piaui">Piauí (PI)</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro (RJ)</option>
+                    <option value="rio-grande-do-norte">Rio Grande do Norte (RN)</option>
+                    <option value="rio-grande-do-sul">Rio Grande do Sul (RS)</option>
+                    <option value="rondonia">Rondônia (RO)</option>
+                    <option value="roraima">Roraima (RR)</option>
+                    <option value="santa-catarina">Santa Catarina (SC)</option>
+                    <option value="sao-paulo">São Paulo (SP)</option>
+                    <option value="sergipe">Sergipe (SE)</option>
+                    <option value="tocantins">Tocantins (TO)</option>
+                </select><br>
+
+                <label for="endereco-cidade"><strong>Cidade onde reside:</strong></label><br>
+                <select name="endereco-cidade" id="endereco-cidade">
+                    <option value="recife">Recife</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="imagem-de-perfil-field">
+                <img class="imagem-de-perfil" src="./Imagens/profile-defaultimg.img" alt="#">
+                <button class="botao-imagem-de-profile">Inserir foto de perfil</button>
+            </div>
+
+            <div class="anexar-curriculo-e-botao-field">
+                <img class="imagem-anexar-curriculo"  src="./Imagens/anexarimg.jpg" alt="#"><br>
+                <button class="botao-anexar-curriculo">Anexar curriculo</button>
+            </div>           
+        </fieldset>
+        <input class="submit-button" type="submit" value="Submit">
+
+
+   </main>
+
+
+   <footer class="footer">
+       
+    <div class="footer-texto"><p><i>© 2023 Pernambuco, Brasil Alunos da FICR + Embarque.</i></p></div>
+
+    <div class="footer-items-field">
+        <ul class="footer-items">
+            <li>Politica de privacidade</li>
+            <li>Termos de uso</li>
+            <li>Sugestoẽs</li>
+        </ul>
+    </div>
+    </footer>
 </body>
 </html>
