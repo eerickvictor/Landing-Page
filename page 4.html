@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar</title>
+    <title>Consultar</title>
     <link rel="stylesheet" href="style.css">
     <style>
         * {
@@ -35,6 +35,8 @@
             gap: 24px;
             padding: 12px;
             margin: 0;
+            color: lightgrey;
+
         }
 
         .conteudo{
@@ -141,8 +143,6 @@
     </style>
 </head>
 <body>
-
-
     <header class="cabecalho">
         <ul class="cabecalho-items-esquerda">
             <li>Home</li>
@@ -161,50 +161,19 @@
 
         <div class="conteudo-titulo-field">
           <h1 class="conteudo-titulo">Seja bem vindo!</h1>
-         <p class="conteudo-subtitulo"><i>Conte-nos um pouco sobre você</i></p>
+         <p class="conteudo-subtitulo"><i>Conte-nos um pouco sobre a Instituição</i></p>
         </div>
     
         <fieldset class="formulario-de-cadastro">
 
             <div class="nome-field">
-                <label for="nome"><strong>Nome:</strong></label><br>
-                <input type="text" name = "nome" id="nome" required>
-            </div>
-
-            <div class="sobrenome-field">
-                <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
-                <input type="text" name = "sobrenome" id="sobrenome" required>
-            </div>
-
-
-            <div class="cpf-field">
-                <div class="cpf-field">
-                    <label for="cpf"><strong>Numero de Cpf:</strong></label><br>
-                    <input type="number" placeholder="000.000.000-00" name = "cpf" id="cpf" required>
-                </div>
-            </div>
-            
-
-
-
-            <div class="data-de-nascimento-field">
-                <label for="data-de-nascimento"><strong>Data de nascimento:</strong></label><br>
-                <input type="date" name = "data-de-nascimento" id="data-de-nascimento" required>
-            </div>
-
-            <div class="disponibilidade-field">
-                <label for="disponibilidade"><strong>Disponibilidade:</strong></label><br>
-                <input type="checkbox" name = "disponibilidade-manha" id="disponibilidade" required>
-                <label for="disponibilidade-turno"><strong>Manhã</strong></label><br>
-                <input type="checkbox" name = "disponibilidade-tade" id="disponibilidade" required>
-                <label for="disponibilidade-turno"><strong>Tarde</strong></label><br>
-                <input type="checkbox" name = "disponibilidade-noite" id="disponibilidade" required>
-                <label for="disponibilidade-turno"><strong>Noite</strong></label><br>
+                <label for="nome"><strong>Nome da Instituição</strong></label><br>
+                <input type="text" name = "nome-instituicao" id="nome-instituicao" required>
             </div>
 
 
             <div class="area-de-ensino-e-botao-field">
-                <label for="area-de-ensino"><strong>Areas de ensino:</strong></label><br>
+                <label for="area-de-ensino"><strong>Disciplina desejada</strong></label><br>
                 <select name="area-de-ensino" id="area-de-ensino">
                     <option value="portugues">Língua Portuguesa</option>
                     <option value="matematica">Matemática</option>
@@ -221,6 +190,16 @@
                     <option value="outros">Outros</option>
                 </select><br>
             <button class="botao-area-de-ensino">Adcionar</button>    
+            </div>
+
+            <div class="disponibilidade-field">
+                <label for="disponibilidade"><strong>Disponibilidade desejada</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-manha" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Manhã</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-tade" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Tarde</strong></label><br>
+                <input type="checkbox" name = "disponibilidade-noite" id="disponibilidade" required>
+                <label for="disponibilidade-turno"><strong>Noite</strong></label><br>
             </div>
 
             <div class="telefone-field">
@@ -268,17 +247,13 @@
                 </select>
             </div>
 
-            <div class="imagem-de-perfil-field">
-                <img class="imagem-de-perfil" src="./Imagens/profile-defaultimg.img" alt="#">
-                <button class="botao-imagem-de-profile">Inserir foto de perfil</button>
+            <div class="sobrenome-field">
+                <label for="sobrenome"><strong>Endereço</strong></label><br>
+                <input type="text" name = "endereco" id="endereco" required>
             </div>
 
-            <div class="anexar-curriculo-e-botao-field">
-                <img class="imagem-anexar-curriculo"  src="./Imagens/anexarimg.jpg" alt="#"><br>
-                <button class="botao-anexar-curriculo">Anexar curriculo</button>
-            </div>           
         </fieldset>
-        <input class="submit-button" type="submit" value="Cadastrar">
+        <input class="submit-button" type="submit" value="Consultar">
 
 
    </main>
@@ -296,25 +271,23 @@
         </ul>
     </div>
     <div id="social_links">
-    
-        <ion-icon name="logo-github"></ion-icon>
+          <ion-icon name="logo-github"></ion-icon>
       
+          <ion-icon name="logo-instagram"></ion-icon>
+        
+          <ion-icon name="logo-youtube"></ion-icon>
       
-        <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
       
-      
-        <ion-icon name="logo-youtube"></ion-icon>
-      
-      
-        <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
     </footer>
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </body>
 </html>
